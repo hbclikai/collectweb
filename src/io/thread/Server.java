@@ -1,15 +1,13 @@
 package io.thread;
 
-import com.alibaba.fastjson.JSONObject;
-
 import io.db.DB;
 import io.db.DBHbaseImpl;
 import io.memorymq.MemoryMQ;
 import io.memorymq.MemoryMQImpl;
-import io.mq.MQ;
 import io.mq.MQKafkaImpl;
-import io.mq.MQRedisImpl;
 import parse.bean.AbstractMessage;
+
+import com.alibaba.fastjson.JSONObject;
 
 /**
  * 主类,spring容器启动时会加载它,从而触发static中的代码
