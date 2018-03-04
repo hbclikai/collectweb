@@ -86,7 +86,6 @@ public class DBHbaseImpl implements DB<AbstractMessage>{
 			Put put = new Put(Bytes.toBytes(rowKey));
 			put.addColumn(Bytes.toBytes("cf1"), Bytes.toBytes("f101"),Bytes.toBytes(r.nextDouble()));
 			put.addColumn(Bytes.toBytes("cf1"), Bytes.toBytes("f102"),Bytes.toBytes(r.nextDouble()));
-			put.addColumn(Bytes.toBytes("cf1"), Bytes.toBytes("f103"),Bytes.toBytes(r.nextDouble()));
 
 			putList.add(put);
 		}
