@@ -37,7 +37,7 @@ public class Server {
 		
 		// 2.启动MQConsumer
 		for(int i=0;i<1;i++) {
-			new MQConsumer(new MQKafkaImpl(), db).start();
+			//new MQConsumer(new MQKafkaImpl(), db).start();
 		}
 		
 		// //3.监听线程
